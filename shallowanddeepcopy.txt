@@ -1,0 +1,73 @@
+var num = [];
+for(var i =0; i< 100; i++){
+  num[i] = i + 1;
+}
+
+//  var sumnum = num;
+// num[0] =400;
+// console.log(sumnum[0])
+// console.log(num[0])
+ var samenum = [];
+copy(num,samenum);
+num[0] =400;
+console.log(samenum[0]);
+console.log(num[0])
+function copy(arr1, arr2){
+  for(var i =0; i < arr1.length; i++){
+    arr2[i] = arr1[i];
+  }
+}
+
+//second way...
+var deepCopy= JSON.parse(JSON.stringfy(deepArray))
+/////////////
+
+let a = {x: 1,y: 2,z: 3};
+let b = Object.assign({},a);
+b.x = 0;
+console.log(JSON.stringify(a)); // {"x":1,"y":2,"z":3}
+console.log(JSON.stringify(b)); // {"x":0,"y":2,"z":3}
+
+//////////////////
+let a = [1,2,3];
+let b = Array.from(a);
+b[0] = 0;
+console.log(a); // [1, 2, 3]
+console.log(b); // [0, 2, 3]
+
+
+const a = {
+  en: 'Bye',
+  de: 'Tschüss'
+}
+let b = {...a}
+b.de = 'Ciao'
+console.log(b.de) // Ciao
+console.log(a.de) // Tschüss
+
+for nested element..
+
+const a = {
+  foods: {
+    dinner: 'Patsa'
+  }
+}
+
+let b = {...a};
+b.foods.dinner = 'Soup'; // it will change for both object and b
+console.log(b.foods.dinner) // Soup
+console.log(a.foods.dinner);  //Soup
+
+sollution
+
+
+const a = {
+  foods: {
+    dinner: 'Patsa'
+  }
+}
+
+let b = {foods: {...a.foods}};
+b.foods.dinner = 'Soup';
+console.log(b.foods.dinner);//Soup
+console.log(a.foods.dinner);// Patsa
