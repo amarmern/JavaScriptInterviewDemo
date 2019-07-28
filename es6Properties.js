@@ -1,17 +1,17 @@
 class Human{    
     gender= "Male";   
-    printAge = () =>{
+    printGender = () =>{
         console.log(this.gender);
     }
 }
 
 class Person extends Human{   
    name = "AKumar"
-    printMyName =() =>{
+    printName =() =>{
         console.log(this.name);
     }
 }
 
 const person = new Person();
-person.printMyName();
-person.printAge()
+person.printName();
+person.printGender()

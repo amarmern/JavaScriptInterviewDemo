@@ -1,4 +1,5 @@
 let array = [3,4,6,2,3,645,2,3,6,83,23,13]
+//first need to sort the array..
 let sortedarray = array.sort((a,b)=> a-b);
 
 function binarySearch(sortedarray, val){

@@ -22,25 +22,25 @@
 
 
 
-// var counter = (function(){
-//     var privateCounter =0;
-//     function changeBy(val){
-//         privateCounter += val;
-//     }
+var counter = (function(){
+    var privateCounter =0;
+    function changeBy(val){
+        privateCounter += val;
+    }
 
-//     return{
-//         value: function(){
-//             return privateCounter;
-//         },
-//         increment: function(){
-//             changeBy(1);
-//         },
-//         decrement: function(){
-//             changeBy(-1);
-//         }
+    return{
+        value: function(){
+            return privateCounter;
+        },
+        increment: function(){
+            changeBy(1);
+        },
+        decrement: function(){
+            changeBy(-1);
+        }
         
-//     }
-// })();
+    }
+})();
 
 
 // console.log(counter.value());

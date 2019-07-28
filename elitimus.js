@@ -41,3 +41,14 @@ var obj = {
 alert(obj.getX.bind(obj)());
 alert(obj.getX.call(obj));
 alert(obj.getX.apply(obj));
+
+function swapNumber(a,b){
+  b= b - a;
+  a = a + b;
+  b= a - b;
+  console.log('a='+a +'and' + b );
+  //2nd way
+  [a,b] = [b,a];
+  console.log('a='+a +'and' + b );
+}
+

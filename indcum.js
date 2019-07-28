@@ -17,7 +17,9 @@ function test(){
 
   
 let arr = [9, 9,9,9, 111, 2, 3, 4, 4, 5, 7];
-arr.filter(function(value,index,self){ return (self.indexOf(value) !== index )}) //[9, 9, 9, 4]
+arr.filter(function(value,index,self){ 
+  return (self.indexOf(value) !== index )
+}) //[9, 9, 9, 4]
 
 
 //Q. How can check array or object?

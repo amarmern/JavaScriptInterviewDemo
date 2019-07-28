@@ -17,11 +17,11 @@ for(var i =0; i< salary.length; i++){
 }
 
 // for finding maximum value....
+let number = [4000,10000,60000,3000,2000];
+let maxNumber = number[0];
 
-let maxNumber = salary[0];
-
-for(var i =0; i< salary.length; i++){
-    if(salary[i] > maxNumber){
-        maxNumber = salary[i];
+for(var i =0; i< number.length; i++){
+    if(number[i] > maxNumber){
+        maxNumber = number[i];
     }
 }

@@ -41,7 +41,7 @@ function getUser(id , callback){
   }, 2000);
 }
 
-or
+//or
 //1st solution using call back
 
 console.log('Before');
@@ -79,7 +79,7 @@ const p = new Promise((resolve , reject) =>{
 
 p.then(result => console.log('Result', result));
 
-or
+//or
 //2nd solution using promise
 
 const p = new Promise((resolve , reject) =>{

@@ -9,7 +9,7 @@ while(num > 1){
 console.log(result);
 }
 factorialize(5);
-factoriaUsingloop(5);
+//factoriaUsingloop(5);
 
 //using  for loop
 function factorial(num){
