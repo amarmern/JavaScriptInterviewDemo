@@ -179,6 +179,15 @@ var removed = myFish.splice(2);
 // myFish is ["angel", "clown"]
 // removed is ["mandarin", "sturgeon"]
 
+console.log(Object.prototype.toString.call(myFish));
+
+var obj = {id: 1, name: 'Amrendra'};
+console.log(Object.prototype.toString.call(obj));
+
+console.log(Array.isArray(obj));
+console.log(Array.isArray(myFish));
+
+
 
 
 
