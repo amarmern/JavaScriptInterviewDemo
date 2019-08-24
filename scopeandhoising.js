@@ -1,8 +1,8 @@
 var hero = "slaman khan";
 
-if(true){
-  var hero ="sahruk khan";
-  console.log(hero);  
+if (true) {
+  var hero = "sahruk khan";
+  console.log(hero);
 }
 console.log(hero);
 
@@ -12,10 +12,8 @@ function b() {
   return;
   function c() {}
 }
-b();    
-console.log(a);//10
-
-
+b();
+console.log(a); //10
 
 var a = 1;
 function b() {
@@ -25,7 +23,6 @@ function b() {
 }
 b();
 console.log(a); //1
-
 
 var a = 1;
 function b() {
