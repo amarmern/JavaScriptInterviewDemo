@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button id="clickBtn">Button Click</button>
+    <br />
+    <p id="hoverPara">Hover over this Text !</p>
+    <br />
+    <b id="effect"></b>
+    <br />
+
+    <script>
+        const x = document.getElementById("clickBtn");
+        const y = document.getElementById("hoverPara");
+        //const z = document.getElementById("effect");
+
+        x.addEventListener("click", RespondClick, false);
+        y.addEventListener("mouseover", RespondMouseOver, false);
+        y.addEventListener("mouseout", RespondMouseOut);
+
+        function RespondClick() {
+            document.getElementById("effect").innerHTML += "Mouse Click Event" + "<br>";
+        }
+
+        function RespondMouseOver() {
+            document.getElementById("effect").innerHTML += "Respond Mouse Over Effect" + "<br>";
+        }
+
+        function RespondMouseOut(params) {
+            document.getElementById("effect").innerHTML += "Responsd Mouse Out Effect" + "<br>";
+        }
+    </script>
+
+</body>
+
+</html>

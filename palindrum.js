@@ -1,27 +1,39 @@
-//121 -palindrum // aba === aba //abc !== cba
-(function palindrumCheck(str){
-    let originalValue = str + "";
-    let result = originalValue.split('').reverse().join('');
-    if(result == originalValue){
-        console.log("Palindrum number or string") 
-    }
-    else{
-        console.log('not Palindrum or string');
-    }
-})(123);
+var words = "racecar";
+var temp = [];
+var rword = "";
 
-(function palindrumCheck(str){
-    let originalValue = str;
-    let result = '';
-    for(let i = str.length; i>=0; i--){
-        result = result + str.charAt(i);
-    }
-    if(result == originalValue){
-        console.log("Palindrum string")
-    }
-    else{
-        console.log('not Palindrum string');
-    }
-})('aba');
+for (var i = 0; i < words.length; i++) {
+  temp.push(words[i]);
+}
 
+for (var i = 0; i < words.length; i++) {
+  rword += temp.pop();
+}
+if (words == rword) {
+  console.log("palindrum");
+} else {
+  console.log("not a palindrum");
+}
+//var originVal = "aba";
+// var reverseVal = originVal
+//   .split("")
+//   .reverse()
+//   .join("");
 
+// console.log(reverseVal);
+
+// if (originVal === reverseVal) {
+//   console.log("Palindrum ");
+// } else {
+//   console.log("Not Palindrum");
+// }
+// var store = "";
+// for (var i = originVal.length; i >= 0; i--) {
+//   store += originVal.charAt(i);
+//   console.log(store);
+// }
+// if (originVal === store) {
+//   console.log("palindrum");
+// } else {
+//   console.log("Not a Palindrum");
+// }

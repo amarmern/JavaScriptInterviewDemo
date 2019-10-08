@@ -1,10 +1,11 @@
-var myvar =100;
-function WhoisThis(){
-    var myvar =200;
-    console.log(myvar); //200
-    console.log(this.myvar); //100
+var test = {
+    name: 'amrendra',
+    obj: {
+        name: 'kumar',
+        baz: function () {
+            return this.name;
+        }
+    }
 }
-WhoisThis();
 
-var obj = WhoisThis();
-console.log(obj.myvar);
+console.log(test.obj.baz());
