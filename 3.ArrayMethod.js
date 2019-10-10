@@ -24,7 +24,7 @@ for (let e of iterator) {
 //Search an item in Array
 var numbers = [1, 3, 6, 8, 11];
 
-var lucky = numbers.filter(function(number) {
+var lucky = numbers.filter(function (number) {
   return number > 7;
 });
 
@@ -39,7 +39,7 @@ var heroes = [
   { name: "Superman", franchise: "DC" }
 ];
 
-var marvelHeroes = heroes.filter(function(hero) {
+var marvelHeroes = heroes.filter(function (hero) {
   return hero.franchise == "Marvel";
 });
 // [ {name: “Ironman”, franchise: “Marvel”}, {name: “Thor”, franchise: “Marvel”} ]
@@ -67,16 +67,16 @@ console.log(fruits[index]); //blueberries
 //indexOf
 // let we have array a = [1,2,3,1,4,1,2];
 // then b=[1,2,3,4]
-let a = [1, 2, 3, 1, 4, 1, 2];
-let b = [];
-for (let i = 0; i < a.length; i++) {
-  if (b.indexOf(a[i]) === -1) {
-    // if exist 0 otherwise it will be -1
-    b.push(a[i]);
-  }
-}
+// let a = [1, 2, 3, 1, 4, 1, 2];
+// let b = [];
+// for (let i = 0; i < a.length; i++) {
+//   if (b.indexOf(a[i]) === -1) {
+//     // if exist 0 otherwise it will be -1
+//     b.push(a[i]);
+//   }
+// }
 
-console.log(b);
+// console.log(b);
 
 //Join in Array
 var elements = ["Fire", "Air", "Water"];
@@ -101,6 +101,7 @@ var array1 = [1, 4, 9, 16];
 //pass a function to map
 const map1 = array1.map(x => x * 2);
 console.log(map1); //[2, 8, 18, 32]
+console.log(array1); //[1, 4, 9, 16];
 
 ///pop
 //push
@@ -118,7 +119,7 @@ console.log(map1); //[2, 8, 18, 32]
 //usecase
 var names = ["Alice", "Bob", "Tiff", "Bruce", "Alice"];
 
-var countedNames = names.reduce(function(acc, curr) {
+var countedNames = names.reduce(function (acc, curr) {
   if (typeof acc[curr] == "undefined") {
     acc[curr] = 1;
   } else {
@@ -130,7 +131,7 @@ var countedNames = names.reduce(function(acc, curr) {
 console.log(countedNames);
 // countedNames is:
 // { 'Alice': 2, 'Bob': 1, 'Tiff': 1, 'Bruce': 1 }
-var a = [5, 5, 5, 2, 2, 2, 2, 2, 9, 4].reduce(function(acc, curr) {
+var a = [5, 5, 5, 2, 2, 2, 2, 2, 9, 4].reduce(function (acc, curr) {
   if (typeof acc[curr] == "undefined") {
     acc[curr] = 1;
   } else {
@@ -143,10 +144,10 @@ console.log(a);
 //{2: 5, 4: 1, 5: 3, 9: 1}
 //reduceRIght
 //reverse
-const a = { 0: 1, 1: 2, 2: 3, length: 3 };
-console.log(a); // {0: 1, 1: 2, 2: 3, length: 3}
-Array.prototype.reverse.call(a); //same syntax for using apply()
-console.log(a); // {0: 3, 1: 2, 2: 1, length: 3}
+// const a = { 0: 1, 1: 2, 2: 3, length: 3 };
+// console.log(a); // {0: 1, 1: 2, 2: 3, length: 3}
+// Array.prototype.reverse.call(a); //same syntax for using apply()
+// console.log(a); // {0: 3, 1: 2, 2: 1, length: 3}
 
 //sort
 var months = ["March", "Jan", "Feb", "Dec"];
@@ -176,7 +177,7 @@ var sortCarName = car.sort((a, b) => {
 console.log(sortCarName);
 
 var items = ["réservé", "premier", "cliché", "communiqué", "café", "adieu"];
-var localsort = items.sort(function(a, b) {
+var localsort = items.sort(function (a, b) {
   return a.localeCompare(b);
 });
 console.log(localsort);
