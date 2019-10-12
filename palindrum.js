@@ -5,8 +5,13 @@ var rword = "";
 for (var i = 0; i < words.length; i++) {
   temp.push(words[i]);
 }
+//using for loop 
+// for (var j = temp.length; j > 0; j--) {
+//   rword += temp.pop();
+// }
 
-for (var i = 0; i < words.length; i++) {
+//using while loop..
+while (temp.length > 0) {
   rword += temp.pop();
 }
 if (words == rword) {
