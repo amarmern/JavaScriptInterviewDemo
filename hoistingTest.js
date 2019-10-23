@@ -63,6 +63,10 @@ hoisted(); // Output: "This function has been hoisted."
 
 function hoisted() {
   console.log("This function has been hoisted.");
+  console.log(a);
+  console.log(b);
+  var a = " var a";
+  let b = "let b"
 }
 
 var x = 10;

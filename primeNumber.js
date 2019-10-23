@@ -12,7 +12,7 @@
 
 
 //check prime number between 1 to 100.
-
+console.log("checkprimenumber1to100");
 function checkprimenumber1to100() {
     for (var i = 2; i <= 100; i++) {
         var flag = true;
@@ -30,7 +30,7 @@ checkprimenumber1to100();
 
 
 // prime factorization
-
+console.log("PrimeFacotrs");
 (function PrimeFacotrs(num) {
     for (var i = 2; i <= num / i; i++) {
         //console.log('i = ' +i+ 'number'=  +num);
