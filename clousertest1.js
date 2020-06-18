@@ -23,7 +23,7 @@
 
 
 var counter = (function(){
-    var privateCounter =0;
+    let privateCounter =0;
     function changeBy(val){
         privateCounter += val;
     }
@@ -43,12 +43,12 @@ var counter = (function(){
 })();
 
 
-// console.log(counter.value());
-// counter.increment();
-// counter.increment();
-// console.log(counter.value());
-// counter.decrement();
-// console.log(counter.value());
+console.log(counter.value());
+counter.increment();
+counter.increment();
+console.log(counter.value());
+counter.decrement();
+console.log(counter.value());
 
 
 // function MakeAdder(x){
