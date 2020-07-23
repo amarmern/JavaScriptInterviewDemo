@@ -102,3 +102,26 @@ console.log(chars)
 
 
 
+
+
+OcuuranceChar()
+  function OcuuranceChar() {
+    //var chars = str.split("");
+    //declare associative key of array
+   const string = "Hello There!"
+
+const chars = {};
+
+for (let char of string) {
+
+    chars[char] = chars[char] + 1 || 1
+}
+
+
+    for (var str in chars) {
+        console.log(str + ' ' + chars[str]);
+    }
+}
+
+ 
+
