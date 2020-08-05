@@ -68,3 +68,20 @@ for (var i = 0; i < 5; i++) {
         }, 3000);
     })();
 }
+
+
+
+function sum(x){
+if(arguments.length==2){
+return arguments[0] + arguments[1];
+}
+
+else{
+return function(y){
+return x + y;
+}
+}
+}
+
+sum(2,3)
+sum(2)(3)
