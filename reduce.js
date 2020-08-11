@@ -30,3 +30,8 @@ var a = a.reduce((acc, curr) => {
 console.log(a);
 
 
+var arr = [[1,2], [3,4], [4,5]]
+
+let flat = arr.reduce((acc,curr) =>[...acc , ...curr])
+
+console.log(flat) // [1,2,3,4]
