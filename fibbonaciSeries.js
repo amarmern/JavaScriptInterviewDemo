@@ -25,12 +25,22 @@
 //using reccursive
 
 function fib(n) {
-    if (n < 2) {
-        return n;
-    }
-    return fib(n - 1) + fib(n - 2)
+  if (n < 2) {
+    return n;
+  }
+  return fib(n - 1) + fib(n - 2);
 }
 console.log(fib(6));
 
-
-
+fibnoci(6);
+function fibnoci(num) {
+  var num1 = 0;
+  var num2 = 1;
+  var sum = 0;
+  for (var i = 0; i < num; i++) {
+    sum = num1 + num2;
+    num1 = num2;
+    num2 = sum;
+  }
+  console.log(num2);
+}

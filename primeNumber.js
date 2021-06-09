@@ -8,7 +8,7 @@
     if (flag) {
         console.log(`${num} is prime number!`);
     }
-})(11);
+})(15);
 
 
 //check prime number between 1 to 100.

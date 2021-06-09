@@ -48,3 +48,35 @@ function find_duplicates(arr2) {
 }
 var uniq = find_duplicates(arr2);
 console.log(uniq);
+
+function find_duplicates(arr2) {
+  let out = [];
+  let counts = {};
+  for (var i = 0; i < arr2.length; i++) {
+    if (counts[arr2[i]] >= 1) {
+      counts[arr2[i]] = counts[arr2[i]] + 1;
+    } else {
+      counts[arr2[i]] = 1;
+    }
+    if (counts[arr2[i]] === 2) {
+      out.push(arr2[i]);
+    }
+  }
+  return out;
+}
+var uniq = find_duplicates(arr2);
+console.log(uniq);
+
+let count = {};
+let out = [];
+for (let arr of arr3) {
+  if (count[arr] >= 1) {
+    count[arr] = count[arr] + 1;
+  } else {
+    count[arr] = 1;
+  }
+  if (count[arr] === 2) {
+    out.push(arr);
+  }
+  out;
+}
