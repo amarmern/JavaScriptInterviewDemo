@@ -27,3 +27,15 @@ console.log(filter(1,2,3));
 [a,b] = ["Hello","amar"];
 console.log(a);
 console.log(b);
+
+
+let c = [1,2,[3,[4,5]]]
+let d =c.flat()
+console.log(d.flat())
+//or
+const arr = [10, [20, [30]]];
+
+console.log(arr.flat(1))
+console.log(arr.flat(2))
+
+

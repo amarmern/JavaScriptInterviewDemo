@@ -75,3 +75,27 @@ function makeFunc() {
 
 let myFunck = makeFunc();
 console.log(makeFunc());
+    (function () {
+        var j = i;
+        setTimeout(() => {
+            console.log(j);
+        }, 3000);
+    })();
+
+
+
+
+function sum(x){
+if(arguments.length==2){
+return arguments[0] + arguments[1];
+}
+
+else{
+return function(y){
+return x + y;
+}
+}
+}
+
+sum(2,3)
+sum(2)(3)

@@ -31,3 +31,6 @@ console.log(reverse)
 
 
 //test a type of number javascript
+
+console.log(Number.isInteger(3.1)) // false
+console.log(Number.isInteger(3)) //true

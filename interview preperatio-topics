@@ -1,0 +1,180 @@
+symantic tag
+benifuts and
+local storage 
+library of
+sass 
+bind call apply
+es6 
+=> and this dif
+
+portal of 
+
+redux store how can reset
+event bubling / captire
+clouser
+asynchronus call
+inheritance
+
+defence between events in jascript
+ ev.preventDefault();
+
+
+what are the library used for css?
+sass - focus , sass map
+secure local storage to be hml
+symantic tags
+javascript is synch/aas
+display none inline
+call bind and apply
+es6- features
+arrow, this function
+
+react version latest
+error boundry
+ how can reset redux store
+react state librtu
+event/ bubling  / captring
+hoew to desine web application
+clouser// asynchronous
+
+
+
+$setbgcolor ='#fff'
+
+p {
+	backgroud-clor : $setbgcolor
+}
+
+map(key1,$setbgcolor)
+
+function perso
+
+From Venkatesh to Everyone:  06:22 PM
+const arr = [1, 2, 3];
+arr.push(4);
+console.log('arr is ', arr); // [ 1, 2, 3, 4 ]
+ 
+const obj = { name: 'Robin', skill: 'JS' };
+obj.skill = 'React';
+obj.profession = 'Developer';
+console.log('obj is ', obj);
+
+function fun(a, b){
+ return a + b
+}
+
+let add = function(a,b){
+return a + b
+}
+
+
+
+console.log(funcDeclaration()); 
+console.log(funcExpression()); 
+ 
+function funcDeclaration() {
+  console.log('Function declaration');
+}
+ 
+let funcExpression = function() {
+  console.log('Function expression');
+}
+
+
+function callApi() {
+  return fetch("url/to/api/endpoint")
+    .then(resp => resp.json())
+    .then(data => {
+      //do something with "data"
+    }).catch(err => {
+      //do something with "err"
+    });
+}
+
+async function callApi() {
+try {
+await getendpoint('url/to/api/endpoint'){
+		return resp.json()
+	}
+await	
+}
+catch(ex){
+console.log(ex)
+}
+ 
+	
+}
+
+
+
+var arr = [[1,2], [3,4], [4,5]]
+let 
+for(let ar of arr){
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Test extends React.Component {
+  state = {
+    resources: [],
+  };
+
+ componentDidMount() {
+    this.setState({ resources: null });
+  }
+
+  render() {
+    return (
+      <div>
+        Convert to function component
+      </div>
+    );
+  }
+}
+
+const Test  = ()=> {
+	const[resources , setresources] = useSet(["null"]);
+	
+	retun( <div> 
+	
+		{resources}
+	</div>
+	
+	)
+
+}
+
+
+
+
+
+
+
+
+
+
