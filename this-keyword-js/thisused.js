@@ -1,3 +1,21 @@
+var person = {
+  name: 'Jack',
+  prop: {
+    name: 'Daniel',
+    getName: function () {
+      return this.name;
+    },
+  },
+};
+
+var name = person.prop.getName.bind(person);
+console.log(name()); // Jack
+
+var name = person.prop.getName();
+console.log(name); //Daniel
+
+////////////
+
 let fullName = 'mantu kumar';
 let obj = {
   fullName: 'amrendra kumar',
@@ -33,18 +51,20 @@ let test1 = obj1.prop1.getfullName1;
 console.log(test1()); //undifined
 console.log(test1.call(obj1.prop1)); //undifined
 
+////
 let person = {
   name: 'Aditi',
   age: '14',
-  info: function() {
+  info: function () {
     setTimeout(() => {
-      console.log(`${this.name} old ${this.age}`); 
+      console.log(`${this.name} old ${this.age}`);
     }, 3000);
-    
   },
 };
 
 console.log(person.info());
+
+///
 
 let People = function (person, age) {
   this.person = person;
