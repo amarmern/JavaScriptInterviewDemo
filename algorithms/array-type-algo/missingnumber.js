@@ -13,7 +13,7 @@ var arrayLength = Math.max.apply(Math, intArray);
 var missing = [];
 
 for (var i = 0; i < arrayLength; i++) {
-  if (intArray.indexOf(i) < 0) {
+  if (intArray.indexOf(++i) < 0) {
     missing.push(i);
   }
 }
