@@ -1,24 +1,32 @@
-var data = [
-    { "name": "bill", "age": 20 },
-    { "name": "jhon", "age": 19 },
-    { "name": "steve", "age": 16 },
-    { "name": "larry", "age": 22 },
-    null, null, null
-  ];
-  
-  //eliminate all the null values from the data
-  data = data.filter(function(x) { return x !== null }); 
-  
-  console.log("data: " + JSON.stringify(data));
-  
-  var elemnts = [1,null, 2, null,3,4];
-  //elemnts = elemnts.filter((x) => x != null);
-  //console.log(elemnts);
-  var tempArr = [];
-  for(let i =0; i< elemnts.length; i++){
-    if(elemnts[i] != null){
-      console.log(tempArr[tempArr.length]= elemnts[i]);
-    }  
+let arr = [
+  { id: 15 },
+  { id: -1 },
+  { id: 0 },
+  { id: 3 },
+  { id: 12.2 },
+  { },
+  { id: null },
+  { id: NaN },
+  { id: 'undefined' }
+]
+
+let invalidEntries = 0
+
+function filterByID(item) {
+  if (Number.isFinite(item.id) && item.id !== 0) {
+    return true
   }
+  invalidEntries++
+  return false;
+}
+
+let arrByID = arr.filter(filterByID)
+
+console.log('Filtered Array\n', arrByID)
+// Filtered Array
+// [{ id: 15 }, { id: -1 }, { id: 3 }, { id: 12.2 }]
+
+console.log('Number of Invalid Entries = ', invalidEntries)
+// Number of Invalid Entries = 5
   
   
