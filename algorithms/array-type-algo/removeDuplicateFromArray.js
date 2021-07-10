@@ -1,3 +1,23 @@
+var removeDuplicates = function (nums) {
+  let map = {};
+
+  for (let i = 0; i < nums.length; i++) {
+    if (map[nums[i]] !== undefined) {
+      // index for value (nums[i]) exists
+      nums.splice(map[nums[i]], 1);
+      i--; // decrease counter because of splice
+      map[nums[i]] = i; // new index for value
+    } else {
+      map[nums[i]] = i; // record new index
+    }
+  }
+
+  return nums;
+};
+let nums = [1,2,2,2,5,8,9];
+console.log(removeDuplicates(nums));
+
+
 var uniqueArray = function(arrArg) {
   return arrArg.filter(function(elem, pos, arr) {
     return arr.indexOf(elem) == pos;
