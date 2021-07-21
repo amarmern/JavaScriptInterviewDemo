@@ -28,8 +28,8 @@ function findLongestWordEs6(str) {
 console.log("2", findLongestWordEs6(arr));
 
 const findLongetWordReduce = function (arr) {
-  let longest = arr.reduce(function (a, b) {
-    return a.length > b.length ? a : b;
+  let longest = arr.reduce(function (acc, curr) {
+    return acc.length > curr.length ? acc : curr;
   });
   return longest;
 };
