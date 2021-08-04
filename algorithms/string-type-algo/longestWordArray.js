@@ -2,19 +2,6 @@
 
 var arr = ["fdgdfgdfg", "gdfgf", "gdfgdfhawsdgd", "gdf", "gdfhdfhjurvweadsd"];
 
-function findLongestWord(str) {
-  //str = str.split(' ')
-  let longestStr = "";
-  for (let i = 0; i < str.length; i++) {
-    if (str[i].length > longestStr.length) {
-      longestStr = str[i];
-    }
-  }
-  return longestStr;
-}
-
-console.log("1", findLongestWord(arr));
-
 function findLongestWordEs6(str) {
   let longestStr = "";
   str.forEach((ele) => {
