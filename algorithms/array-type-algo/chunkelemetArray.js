@@ -16,6 +16,17 @@ function chunkArray(array, size) {
 //   return result;
 // }
 
+function chunkedArray(arr, size) {
+  let chunked = [];
+  while (arr.length > 0) {
+    chunked.push(arr.splice(0, size));
+  }
+  return chunked;
+}
+
+console.log(chunkedArray(arr, 5));
+
+//or
 // function chunkArray(array, size) {
 //   let result = [];
 //   let coppyArray = [...array];
