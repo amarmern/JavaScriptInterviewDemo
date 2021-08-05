@@ -1,10 +1,11 @@
 let string = "Javascript is best";
 
-//let str1 = string.split(" ").reverse().join(' ')
-let str1 = string.split(" ")
-let res = ""
-for(let i = str1.length-1; i >=0; i--){
-res += str1[i] + " "
+function reverseWord(string){
+  let result = ""
+  for(let i = string.length-1; i>=0; i--){
+    result+= string[i]
+  }
+  return result
 }
-console.log(res);
-//best is Javascript  
+
+console.log(reverseWord(string))
