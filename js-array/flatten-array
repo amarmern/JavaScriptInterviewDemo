@@ -1,0 +1,13 @@
+let arrayObj = [1, 2, 3, 4, [5, 6, [7, 8]]];
+let result = [];
+function FlattenArray(arrayObj) {
+  for (let item of arrayObj) {
+    if (Array.isArray(item)) {
+      FlattenArray(item);
+    } else {
+      result.push(item);
+    }
+  }
+  return result;
+}
+console.log(FlattenArray(arrayObj));
