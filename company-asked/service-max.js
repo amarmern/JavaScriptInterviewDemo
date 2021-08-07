@@ -54,15 +54,16 @@ setTImeOut(()=>{ randomGenerator,myrandomnumber*1000}
 
 [1,2,3,4,[5,6,[7,8]]] => [1,2,3,4,5,6,7,8]
 
-let arr1 =[1,2,3,4,[5,6,[7,8]]]
-
-function FlattenArray(arrayObj){
-  for(item of arrayObj){
-  if(Array.isArray(item) == false){
-    result.push(item);
+let arr = [1, 2, 3, 4, [5, 6, [7, 8]]];
+let res = [];
+function flatFunc(arr) {
+  for (let item of arr) {
+    if (Array.isArray(item)) {
+      flatFunc(item);
+    } else {
+      res.push(item);
+    }
   }
-  else{
-    FlattenArray(item);
-  }
-  }
+  return res;
 }
+console.log(flatFunc(arr));
