@@ -1,0 +1,55 @@
+var users= [{
+"id":1,
+"name":"user1"
+},
+{
+"id":2,
+"name":"user2"
+}
+]
+
+var ages=[
+{
+"id":2,
+"age":25
+},{
+
+"id":1,
+"age":23
+}
+
+]
+
+var companies =[
+{
+"id":2,
+"age":"Microsoft"
+},
+{
+"id":1,
+"company":"NASA"
+}
+]
+let result = []
+let results = users.find((id) =>users.id === companies.id)
+
+//console.log(results);
+
+// expected result=[{
+// "id":1,
+// "name":"user1",
+// "company":"NASA",
+// "age":23
+// },
+// {
+// "id":2,
+// "name":"user2",
+// "company":"Microsoft"
+// "age":25
+// }
+// ]
+
+
+console.log(Math.random().toString(32))
+
+
