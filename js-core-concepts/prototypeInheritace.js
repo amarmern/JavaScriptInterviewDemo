@@ -34,3 +34,21 @@ user2.login();
 
 console.log(admin);
 
+function Animal(name) {
+  this.name = name;
+}
+
+Animal.prototype.bark = function () {
+  console.log(this.name, "can bark");
+};
+
+function Dog(...args) {
+  Animal.apply(this,args);
+}
+
+Dog.prototype = Object.create(Animal.prototype);
+
+let dog1 = new Dog("Dog1");
+dog1.bark();
+
+
