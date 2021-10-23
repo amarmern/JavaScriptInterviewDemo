@@ -1,0 +1,22 @@
+var myObject = {
+  foo: "bar",
+  func: function () {
+    var self = this;
+    console.log("outer func:  this.foo = " + this.foo);
+    console.log("outer func:  self.foo = " + self.foo);
+    (function () {
+      console.log("inner func:  this.foo = " + this.foo);
+      console.log("inner func:  self.foo = " + self.foo);
+    })();
+  }
+};
+myObject.func();
+
+for (var i = 0; i < 5; i++) {
+  setTimeout(function () {
+    console.log(i);
+  }, i * 1000);
+}
+
+//Write a function called sumZero which will accept a sorted array of integers. The function should find the first pair where the sum is 0 . Return an array that includes both the values that sum to zero  or undefined if pair does not exist.
+//arr = [-4,-3,-2,-1,0,1,2,5]
