@@ -1,0 +1,173 @@
+Scratchpad
+
+
+
+
+
+
+
+
+
+
+
+
+
+isPrime Function
+Function isPrime(int n) {
+While(n >=2){
+if(n 
+}
+}
+
+
+
+
+
+Write Test Cases for below Problem statement
+
+Requirement - introduce discount
+BP - base price
+SP(selling price) = BP + Tax
+Ranges for discount on SP ( rounded)
+0-99 = Rs 10
+100 - 199 = Rs 20
+200 - above = Rs 30
+
+
+Final customer calculation - SP  - discount
+
+
+
+
+APIs
+API 1 - GET - baseurl/getSP.json?bp=100&tax=1
+
+API 2  - POST - baseurl/getdiscount.json  { "selling_price" : 110 }
+
+API 3 - POST - baseurl/validateBill.json  { "selling_price" : 110 , "discount_amount" : 10 , "total_bill" : 100 }
+
+
+JSON Structure
+What’s wrong with the below JSON structure?
+
+{
+ “FirstName”: "Bijay",
+ "LastName": "Rungta",
+ “email”: “bijay.rungta@rebelfoods.com”,
+ "DOB": "24/06/1980",
+ “isPremium”: “true”
+}
+
+
+CSS Selector to match top level LI elements
+
+<ul class=”nav”>
+   <li>
+       Level 1 Item 1
+       <ul>
+           <li>Level 2 Item 1</li>
+           <li>Level 2 Item 2</li>
+       </ul>
+   </li>
+   <li>
+       Level 1 Item 2
+       <ul>
+           <li>Level 2 Item 1</li>
+           <li>Level 2 Item 2</li>
+       </ul>
+   </li>
+</ul>
+
+Ul + li {
+Color: blue;
+}
+
+ATM Debit Transaction
+An ATM debit card transaction is performed. Write test cases for client side / server side and DB validations
+
+
+Database Normalization
+=========================
+Order Number, Order Date
+Payment Method. Total Amount
+
+Customer Name, Address, Phone
+
+Item Name	Item Unit price	Item Quantity		Item Price
+Suger 		30.00 			2.321			69.63
+Jeans		1500.00		1.00			1500.00
+-------
+------
+=========================
+
+
+
+
+
+
+
+
+================
+Database Query
+Orders 
+Order_id
+Order_Date
+Customer_id
+
+Select all Order Ids for orders placed on 1st July 2021 by repeat customers
+
+
+
+
+Find 3 Fastest Horses from a set of 25
+You have 25 Horses
+You have a race Course which has 5 Tracks
+You can have a max of 5 horses run at a time
+You have to find the 3 fastest horses in the least number of races.
+
+Assumptions and constraints
+The speed of any given Horse is constant across races
+You can not measure the time taken by horses to complete any race
+================
+
+
+A1
+B1
+C1
+D1
+E1
+A2
+B2
+C2
+D2
+E2
+A3
+B3
+C3
+D3
+E3
+A4
+B4
+C4
+D4
+E4
+A5
+B5
+C5
+D5
+E5
+
+
+
+
+
+Rubic’s Cube
+================
+
+
+
+
+
+
+
+
