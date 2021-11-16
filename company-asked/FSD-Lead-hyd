@@ -1,0 +1,53 @@
+//console.log("hello")
+//0,1,1,2,3,5,8,13...
+
+const fibnocci = (num) =>{
+if(num===1){
+return 0;
+}
+if(num ===2){
+return 1
+}
+return fibnocci(num-1) + fibnocci(num-2)
+}
+console.log(fibnocci(5)) 
+
+temp = [
+		  {
+			wound_type: 'ULCER',
+			prob: 20,
+		  },
+		  {
+			wound_type: 'DIAB',
+			prob: 10,
+		  },
+		  {
+			type: 'BP',
+			prob: 30,
+		  },
+		  ]
+console.log(temp)
+let newObj = temp.map(res=> {return {'subType': res.wound_type || res.type ,'prob': res.prob}})
+console.log(newObj)
+
+var array=[{'a':'man', 'age':'35'},{'b':'woman', 'age':'30'}];
+console.log(array.map(function(item){
+      return {gender: item[Object.keys(item)[0]],age:item.age};
+}));
+
+const fibbonnaciSeries = (num) =>{
+let fib = [0,1];
+//if(num <2) return 1;
+for(let i =2; i < num; i++){
+fib[i] = fib[i-1] + fib[i-2]
+}
+console.log("fibseries" ,fib)
+}
+
+fibbonnaciSeries(8)
+
+
+
+
+
+
