@@ -11,17 +11,21 @@ function sum(a) {
   }
 }
 
-console.log("sum1", sum(2)(3));
-console.log("sum2", sum(2, 3));
+let sum1 = add(2, 0); //5
+console.log("sum1", sum1);
 
-function sum1(a, b) {
-  if (b) {
+let sum2 = add(2)(0); //5
+console.log("sum2", sum2);
+function add(a, b) {
+  if (b === undefined) {
+    return (b) => {
+      return a + b;
+    };
+  } else {
     return a + b;
   }
-  return (b) => {
-    return a + b;
-  };
 }
+
 
 console.log("sumation1", sum1(2)(3));
 
