@@ -70,3 +70,69 @@ function segrigate01(arr) {
 
 console.log(segrigate01(arr));
 
+
+
+
+[14:25] Jyotil Raval
+    function test() {​
+  console.log(a);
+  console.log(foo());
+  var a = 1;
+  function foo() {​
+    return 2;
+  }​
+}​
+test();
+​[14:27] Jyotil Raval
+    let i;
+for (i = 0; i < 3; i++) {​
+  const log = () => {​
+    console.log(i);
+  }​;
+  setTimeout(log, 100);
+}​
+​[14:29] Jyotil Raval
+    function createIncrement() {​
+  let count = 0;
+  function increment() {​
+    count++;
+  }​
+  let message = `Count is ${​count}​`;
+  function log() {​
+    console.log(message);
+  }​
+  return [increment, log];
+}​
+const [increment, log] = createIncrement();
+increment();
+increment();
+increment();
+log();
+​[14:37] Jyotil Raval
+    var funkA = () => console.log(‘Hi’);
+var funkB = new funkA();
+funkB();
+​[14:40] Jyotil Raval
+    var a = [1, 2, 3, 4, 5];
+//Your Code - Begin;
+//Your Code - Finish;
+console.log(a);
+// Output
+['start', 1, 2, 3, 4, 5, 'end'];
+​[14:42] Jyotil Raval
+    var a=['a','b','c','d'];
+//Your Code - Begin;
+//Your Code - Finish;
+console.log(a);
+// Output
+//{​a:1,b:2,c:3,d:4}​
+​[14:45] Jyotil Raval
+    var arr = ['INDIA','india','B','b','c','C'];
+​[14:48] Jyotil Raval
+    A frog is at the bottom of a 30 meter well.
+Each day it summons enough energy for one 3 meter leap up the well.
+Exhausted, it then hangs there for the rest of the day.
+At night, while it is asleep, it slips 2 meters backwards.
+How many days does it take him to escape from the well?
+
+
