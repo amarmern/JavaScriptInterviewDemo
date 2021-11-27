@@ -14,4 +14,23 @@ function countRepeatedWords(sentence) {
 
 console.log(countRepeatedWords(str));
 
+var str="how do you do"
+function findMostReaptedWord(str){
+    var res = str.split(" ");
+    alert(res.length);
+    var count;
+    var compareString;
+    for(var i=0;i<res.length ;i++){
+        count=0;
+        compareString=res[i]
+        for (j=0;i<res.lenth ;j++){
+            if(compareString==res[j]){
+                count++
+            }
+        }
 
+    }
+
+}
+
+alert(findMostReaptedWord(str))
