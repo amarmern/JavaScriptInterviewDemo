@@ -1,5 +1,19 @@
 let str = "abc def abc def xyz abc";
 
+let str = "I am not gonna live forever, but I wanna live while I am alive",
+  split = str.split(" "),
+  obj = {};
+
+for (let i = 0; i < split.length; i++) {
+  if (!obj[split[i]]) {
+    obj[split[i]] = 1;
+  } else {
+    obj[split[i]]++;
+  }
+}
+
+console.log(obj)
+
 function countRepeatedWords(sentence) {
   let words = sentence.split(" ");
   let wordMap = {};
