@@ -47,3 +47,14 @@ for (let i = 0; i < a.length; i++) {
 console.log(b);
 
 console.log([...new Set(a)]);
+
+const items = [1, 2, 3, 1, 2, 3, 7, 8, 7];
+//.....................
+const removeDuplicate = items.reduce((acc, item) => {
+  if (!acc.includes(item)) {
+    acc.push(item);
+  }
+  return acc;
+}, []);
+
+console.log(removeDuplicate);
