@@ -1,0 +1,19 @@
+import "./styles.css";
+export default function App() {
+  let users = [
+    { id: 12345, name: "John", age: 25, visible: true },
+    { id: 56789, name: "Jac", age: 32, visible: true },
+    { id: 76367, name: "Tes", age: 22, visible: false },
+    { id: 66932, name: "Rai", age: 35, visible: false },
+    { id: 82103, name: "Arun", age: 29, visible: true },
+  ];
+  return (
+    <div className="App">
+      {users.map((u) => {
+        if (u.visible) {
+          return <div key={u.id}>{u.name}</div>;
+        }
+      })}
+    </div>
+  );
+}
