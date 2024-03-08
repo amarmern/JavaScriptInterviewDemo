@@ -1,0 +1,79 @@
+
+What is Node.js? What is it used for?
+Node.js is an open-source, cross-platform JavaScript runtime environment and library to run web applications outside the client’s browser. It is used to create server-side web applications. Node.js is perfect for data-intensive applications as it uses an
+ asynchronous, event-driven model1. 
+
+
+What are the benefits of Node.js?
+Some of the benefits of using Node.js include that it is generally fast, rarely blocks, offers a unified programming language and data type, everything is asynchronous, and it yields great concurrency1. 
+
+
+How does Node.js work?
+A web server using Node.js typically has a workflow that is quite similar to the diagram illustrated below. Clients send requests to the webserver to interact with the web application. Requests can be non-blocking or blocking. Node.js retrieves the incoming
+ requests and adds those to the Event Queue. The requests are then passed one-by-one through the Event Loop. It checks if the requests are simple enough not to require any external resources. The Event Loop processes simple requests (non-blocking operations),
+ such as I/O Polling, and returns the responses to the corresponding clients2. 
+
+
+What is event-driven programming?
+Event-driven programming is a programming paradigm in which the flow of program execution is determined by events such as user actions (mouse clicks, key presses), sensor outputs, or messages from other programs or threads1. 
+
+
+What is an event loop in Node.js? The event loop in Node.js is a mechanism that allows Node.js to perform non-blocking I/O
+ operations by offloading operations to the system kernel whenever possible. The event loop runs in a single thread and is responsible for managing callbacks for asynchronous operations1. 
+
+
+How does Node.js handle child threads?
+Node.js does not natively support multithreading, but it does provide support for child processes, which can be used to achieve similar functionality. The child_process module in Node.js provides several methods for spawning new processes and managing inter-process
+ communication3. 
+
+
+What are the types of API functions in Node.js? There are two types of API functions in Node.js: blocking and non-blocking.
+ Blocking functions execute synchronously and block further execution until they complete, while non-blocking functions execute asynchronously and do not block further execution1. 
+
+
+What is your experience with Node.js?
+This question will vary depending on the individual being interviewed. 
+
+
+Why use Node.js? Node.js makes building scalable network programs easy. Some of its advantages include that it is generally
+ fast, rarely blocks, offers a unified programming language and data type, everything is asynchronous, and it yields great concurrency2. 
+
+
+What is Node.js mostly used for?
+Node.js can be used for developing real-time web applications, network applications, general-purpose applications, and distributed systems1. It is also commonly used for building back-end services such as APIs. 
+
+
+ 
+
+
+Cloud Computing: AWS  
+
+
+What is cloud computing, and what are its benefits?  
+
+
+What are the differences between AWS, Azure, and Google Cloud Platform?  
+
+
+What are some common cloud computing services offered by these platforms, such as compute or storage services?  
+
+
+How do you design a cloud architecture using these platforms?  
+
+
+How do you manage resources and costs in a cloud environment?  
+
+
+How do you ensure scalability and high availability in a cloud environment?  
+
+
+How do you handle security concerns in a cloud environment?  
+
+
+How do you integrate a cloud environment with on-premises infrastructure or other cloud platforms?  
+
+
+What are some best practices for migrating to a cloud environment or managing a hybrid cloud environment?  
+
+
+What are some emerging trends in cloud computing that developers should be aware of? 
