@@ -48,6 +48,7 @@ let People = function (person, age) {
 
 let person1 = new People('Amrendra', '35');
 person1.info();
+//o/p: Amrendra is 35
 
 let People3 = function (person, age) {
   this.person = person;
@@ -61,6 +62,8 @@ let person4 = new People3('Amrendra', '35');
 person4.info();
 console.log(typeof People3);
 console.log(People3.info);
+
+//o/p: Amrendra is 35
 
 let People1 = function (name, age) {
   this.name = name;
@@ -76,6 +79,10 @@ let People1 = function (name, age) {
 let person2 = new People1('jhgj', '67');
 person2.info();
 
+//People1 { name: 'jhgj', age: '67', info: [Function (anonymous)] }
+//undefined old undefined
+//solution is arrow function
+
 let People2 = function (name, age) {
   this.name = name;
   this.age = age;
@@ -89,3 +96,6 @@ let People2 = function (name, age) {
 
 let person3 = new People2('mnbbn', '67');
 person3.info();
+
+//People1 { name: 'mohan', age: '67', info: [Function (anonymous)] }
+//mohan old 67
